@@ -1,0 +1,44 @@
+<html>
+    <body bgcolor=#ADD8E6>
+
+        <center>
+
+        <h1> Boston House Price Prediction </h1><br>
+        
+            <form method="POST", action="{{url_for('home')}}">
+            <b> Crime Rate :  <input type="text", name='cr', placeholder="" required> <br><br>
+                Residential Land Zone :  <input type="text", name='rlz', placeholder="" required> <br><br>
+                Non-retail Business Acres :  <input type="text", name='nba', placeholder="" required> <br><br>
+                Charles River tract bounds : <input type="text", name='crtb', placeholder="" required> <br><br>
+                N. O. Concentration : <input type="text", name='noc', placeholder="" required> <br><br>
+                N. O. Rooms : <input type="text", name='nor', placeholder="" required> <br><br>
+                Age : <input type="text", name='age', placeholder="" required> <br><br>
+                Distance to Employment : <input type="text", name='dte', placeholder="" required> <br><br>
+                Highway Accessibility : <input type="text", name='ha', placeholder="" required> <br><br>
+                Property Tax Rate : <input type="text", name='proptr', placeholder="" required> <br><br>
+                Pupil Teacher Ratio : <input type="text", name='ptr', placeholder="" required> <br><br>
+                % Lower income : <input type="text", name='li', placeholder="" required> <br><br>
+                <br>
+            </b>
+                <input type="submit" , value='Predict' >
+            </form>
+            <p style="font-size: x-large; color: white;">House price: {{data}} (in $1000 scale)
+            </p>
+            
+            </center>
+
+    </body>
+</html>
+<!-- Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Bl -->
